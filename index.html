@@ -9,7 +9,7 @@
       $(document).ready(function(){
         var height = $(window).height();
     
-        $(".container.content").css("margin-top", ((height / 2) - 200) + "px");
+        $(".container-fluid").css("margin-top", ((height / 2) - 250) + "px");
       });
     </script>
   </head>
@@ -25,30 +25,45 @@
     
 
     <!-- page -->
-    <div class="container content">
-      <div class="span6">
-        <img id="mainimage" src="http://placehold.it/600x400"/>
-      </div>
-      <div>
-        <div class="well span4">
-          <div class="row-fluid">
-            <form action="/login" method="post" class="form">
-              <input type="text" class="span12" name="email" placeholder="email"><br>
-              <input type="text" name="password" class="span8" placeholder="password">
-              <input type="submit" class="btn btn-primary span4">
-           </form>
-         </div>
-      </div>
-      <div class="well span4">
-        <div class="row-fluid">
-          <form action="**/createaccount**" class="form" method="post">
-            <input type="submit" class="btn btn-primary span12" value="Sign Up">
-          </form>
-          <form action="**/scrolldown**" class="form" method="post">
-            <input type="submit" class="btn btn-secondary span12" value="Learn More" >
-          </form>
-        </div>
-      </div>
-    </div>
+    <div class="container-fluid">
+		<div class=:row-fluid">
+			<div class="span4">
+				<div class="row-fluid">
+				<div class="well span12">
+				<div class="row-fluid>
+                <form action="/login" method="post" class="form">
+                  <input type="text" class="span12" name="email" placeholder="Email"><br>
+                  <input type="text" name="password" class="span12" placeholder="Password">
+                  <input type="submit" class="btn btn-primary span12">
+                </form>
+				</div>
+				</div>
+				</div>
+				
+				<div class="row-fluid">
+				<div class="well span12">
+				<div class="row-fluid">
+					<form action="**/createaccount**" class="form" method="post">
+						<input type="submit" class="btn btn-primary span12" value="Sign Up">
+					</form>
+					<form action="**/scrolldown**" class="form" method="post">
+						<input type="submit" class="btn btn-secondary span12" value="Learn More" >
+					</form>
+				</div>
+				</div>
+				</div>
+			</div>
+				
+			<div class="span8">
+					<div class="row-fluid">
+					<div class="span 12 offset1">
+						<img src="img/photo1.jpg" class="img-rounded" />
+					</div>
+					</div>
+			</div>
+				
+			
+		</div>
+	</div>			
   </body>
 </html>
