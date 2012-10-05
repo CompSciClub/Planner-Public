@@ -9,6 +9,6 @@
 body {
 	background-color : #0590a6;
 }
-.container.content {
-	margin-top:50px;
+.container-fluid.content {
+	margin-top: 50px;
 }
