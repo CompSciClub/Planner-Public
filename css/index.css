@@ -12,3 +12,11 @@ body {
 .container-fluid.content {
 	margin-top: 50px;
 }
+
+.well.span12{
+  margin-left: 0;
+}
+
+#login{
+  margin-top: -8px;
+}
