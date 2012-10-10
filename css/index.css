@@ -33,3 +33,10 @@ h3 {
 h1{
   text-align: center;
 }
+
+.page-two {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
