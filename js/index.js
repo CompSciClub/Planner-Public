@@ -2,6 +2,12 @@ $(document).ready(function(){
   centerContainer();
 
   $(window).resize(centerContainer);
+
+  $("#learnmore").click(function(){
+    $("html,body").animate({
+      scrollTop: ($(window).height() - 41) // scroll to the container. Make sure to subtract height of header
+    }, 600);
+  });
 });
 
 function centerContainer(){
