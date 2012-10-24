@@ -43,6 +43,7 @@ h3 {
   left: 0;
   width: 100%;
   z-index: -1;
+  min-width: 1300px;
 }
 
 .sideBox{
