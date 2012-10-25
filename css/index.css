@@ -49,3 +49,16 @@ h3 {
 .sideBox{
   min-width: 270px;
 }
+
+.white{
+  color: #FFFFFF;
+}
+
+.white h3{
+  line-height: 20px;
+}
+
+.white p{
+  font-size :18px;
+  margin-top: 5px;
+}
