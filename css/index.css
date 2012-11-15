@@ -1,3 +1,11 @@
 .container.content{
   margin-top: 50px;
 }
+h3 {
+  color: #800000;
+ }
+.block-selection{
+  position:absolute;
+  left:200px;
+  top:225px;
+}
