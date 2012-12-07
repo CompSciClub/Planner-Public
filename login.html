@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Make a Class</title>
+    <title>Incorrect Login</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
@@ -21,17 +21,15 @@
     <div class="container content">
       <div class="span4 offset4">
         <h3>Please input a valid username/password</h3>
-        <form type="submit form">
-          <p>Username: </p>
-          <input type="text" id="username" href="/"/>
-          <br>
-          <p>Password: </p>
-          <input type="text" id="password" href="/"/>
-          <br>
-          <div class="row-fluid">
+        <div class="row-fluid">
+          <form type="submit" class="form form-fliud">
+            <p class="span4">Username:</p>
+            <input type="text" id="username" class="span8" href="/" placeholder="username"/>
+            <p class="span4">Password:</p>
+            <input type="text" id="password" class="span8" href="/" placeholder="password"/>
             <input type="submit" class="btn btn-primary span3 offset3"/>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </body>
