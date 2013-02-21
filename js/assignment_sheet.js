@@ -8,9 +8,7 @@ $(document).ready(function(){
   });
   $("#Block").change(writeDates);
 });
-function update_dates(){
-  console.log("2+2 is 342342342342.");
-  }
+
 
 
 function add_assignment(){

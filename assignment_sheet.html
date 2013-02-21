@@ -3,6 +3,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/schedule.js"></script>
     <script src="js/assignment_sheet.js"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
     <title>Make an assignment sheet</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
@@ -64,7 +65,8 @@
               <option value="G">G block</option>
               <option value="H">H block</option>
             </select>
-            <!--Add something here to allow the teacher to choose between classes-->
+            <div class="span4">Start Date:</div>
+            <input type="text" value="1-1-2013" data-datepicker="datepicker" id="dp" class="span8"/>
             <div class="btn btn-success span8 offset2">Make Assignment Sheet</div>
           </div>
         </div>
