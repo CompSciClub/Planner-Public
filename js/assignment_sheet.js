@@ -1,4 +1,4 @@
-var current_assignment = 5;//saves how many assignments have been created
+var current_assignment = 3;//saves how many assignments have been created
 
 var lastDate;
 $(document).ready(function(){
@@ -16,12 +16,21 @@ function add_assignment(){
   // get the date for this assignment
   lastDate = findNextDate($("#Block").val());
   var dateString = (lastDate.getMonth() + 1) + "/" + (lastDate.getDate()) + "/" + String(lastDate.getFullYear()).slice(-2);
-  $("#more").before('<div><div class="date span3" id="day'+String(current_assignment)+'">' + dateString + '</div><input type="text" class="assignment span9"/></div>');
-//for readability:
-//  <div>
-//    <div class="date span3" id="day[current_assignment]"></div>
-//    <input type="text" class="assignment span9"/>
-//  <div>
+  $("#more").before('<div class = "accordion-group" id = "accgroup'+String(current_assignment)+'"><div class = "accordion-heading"><a class = "date span3" id = "day0'+String(current_assignment)+'"">'+dateString+'</a><input id = "evname'+String(current_assignment)+'" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip'+String(current_assignment)+'"></input></div> <div id = "descrip'+String(current_assignment)+'" class = "accordion-body collapse"><div class = "accordion-inner"><textarea placeholder = "Event Description."></textarea></div></div>');
+
+
+/*for readability:
+<div class = "accordion-group" id = "accgroup0">
+  <div class = "accordion-heading">
+    <a class = "date span3" id = "day0"></a>
+    <input id = "evname0" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip0"></input>
+  </div> 
+  <div id = "descrip0" class = "accordion-body collapse">
+    <div class = "accordion-inner">
+      <textarea placeholder = "Event Description."></textarea>
+    </div>
+  </div>
+*/
   current_assignment++;
 }
 
