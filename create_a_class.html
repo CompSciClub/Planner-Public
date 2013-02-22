@@ -1,18 +1,29 @@
-ng="en">   
 <head>   
 <meta charset="utf-8">   
 <title>Twitter Bootstrap Version2.0 horizontal form layout example</title>   
 <meta name="description" content="Twitter Bootstrap Version2.0 horizontal form layout example from w3resource.com.">   
-<link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">  
+<link href="css/bootstrap.min.css" rel="stylesheet"> 
 </head>  
 <body>  
+<!--Navbar (We kind of have this on every page, guys...-->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="/" class="brand">Hopkins Planner</a>
+          <div class="nav-collapse">
+            <ul class="nav"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main Page-->
 <form class="form-horizontal">  
         <fieldset>  
           <legend>Create a Class</legend>  
           <div class="control-group">  
-            <label class="control-label" for="input01">Select Subject:</label>  
+            <!-- Unnecessary, you can use a placeholder. <label class="control-label" for="input01"></label>  -->
             <div class="controls">  
-              <input type="text" class="input-xlarge" id="input01">  
+              <input type="text" class="input-xlarge" id="input01" placeholder = "Class Title.">  
               <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>  
             </div>  
           </div>  
@@ -26,14 +37,17 @@ ng="en">
             </div>  
           </div>  
           <div class="control-group">  
-            <label class="control-label" for="select01">Select list</label>  
+            <label class="control-label" for="select01">Select Block</label>  
             <div class="controls">  
-              <select id="select01">  
-                <option>something</option>  
-                <option>2</option>  
-                <option>3</option>  
-                <option>4</option>  
-                <option>5</option>  
+              <select id="blockSelect">  
+                <option value = "A">A</option>  
+                <option value = "B">B</option>  
+                <option value = "C">C</option>  
+                <option value = "D">D</option>  
+                <option value = "E">E</option>  
+				<option value = "F">F</option>
+				<option value = "G">G</option>
+				<option value = "H">H</option>
               </select>  
             </div>  
           </div>  
@@ -56,9 +70,9 @@ ng="en">
             </div>  
           </div>  
           <div class="control-group">  
-            <label class="control-label" for="textarea">Textarea</label>  
+            <label class="control-label" for="textarea">PLACEHOLDERS!!!!!!!!!</label>  
             <div class="controls">  
-              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>  
+              <textarea placeholder = "Class Description." class="input-xlarge" id="textarea" rows="3"></textarea>  
             </div>  
           </div>  
           <div class="form-actions">  
