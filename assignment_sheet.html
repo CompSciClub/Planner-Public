@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="css/datepicker.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/schedule.js"></script>
     <script src="js/assignment_sheet.js"></script>
@@ -146,7 +147,9 @@
               <option value="H">H block</option>
             </select>
             <div class="span4">Start Date:</div>
-            <input type="text" value="1-1-2013" data-datepicker="datepicker" id="dp" class="span8"/>
+            <div  data-date="1-1-2013" data-date-format="mm/dd/yyyy" id="datepicker" class="span8">
+              <input type="text" class="span8"/>
+            </div>
             <div class="btn btn-success span8 offset2">Make Assignment Sheet</div>
           </div>
         </div>

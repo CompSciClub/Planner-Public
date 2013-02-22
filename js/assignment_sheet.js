@@ -7,6 +7,7 @@ $(document).ready(function(){
     add_assignment();
   });
   $("#Block").change(writeDates);
+  $("#datepicker").datepicker(); 
 });
 
 
