@@ -3,14 +3,16 @@ var current_assignment = 3;//saves how many assignments have been created
 var lastDate;
 $(document).ready(function(){
   writeDates();
-  $("#more").click(function(){
-    add_assignment();
-  });
+  $(window).scroll(move_options);
+  $("#more").click(add_assignment);
   $("#Block").change(writeDates);
   $("#datepicker").datepicker(); 
 });
 
-
+function move_options(){
+  var scrollTop = $(window).scrollTop();
+  $("#options").css('padding-top',String(scrollTop)+"px");
+}
 
 function add_assignment(){
   // get the date for this assignment
