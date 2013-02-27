@@ -1,16 +1,26 @@
-ng="en">   
+
 <head>   
 <meta charset="utf-8">   
-<title>Twitter Bootstrap Version2.0 horizontal form layout example</title>   
-<meta name="description" content="Twitter Bootstrap Version2.0 horizontal form layout example from w3resource.com.">   
-<link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">  
+<title>Create a Class</title>   
+<meta name="description" content="Create a Class">   
+<link href="css/bootstrap.css" rel="stylesheet"> 
+<link href="css/bootstrap-responsive.min.css">
 </head>  
 <body>  
+<div class="pagination-centered">
 <form class="form-horizontal">  
         <fieldset>  
-          <legend>Create a Class</legend>  
+          <legend><div class="pagination-centered">Create a Class</div></legend>  
+<form class="form-horizontal">  
+        <fieldset>  
           <div class="control-group">  
-            <label class="control-label" for="input01">Insert Subject</label>  
+
+<div class="textpad"><label class="control-label" for="input01">Choose Subject</label>  
+ <div class="controls">  
+ <input type="text" class="input-large" id="input01"></div>
+              <p class="help-block">
+          <div class="control-group">  
+	</label>
           </div>  
           <div class="control-group">  
             <label class="control-label" for="select01">Select Block</label>  
@@ -28,16 +38,15 @@ ng="en">
             </div>  
           </div>  
           <div class="control-group">  
-            <label class="control-label" for="textarea">Class Description</label>  
-            <div class="controls">  
+           <div class="textpad"> <label class="control-label" for="textarea">Class Description</label>   </div>
+         <div class="controls">  
               <textarea class="input-xlarge" id="textarea" rows="3"></textarea>  
             </div>  
           </div>  
           <div class="form-actions">  
             <button type="submit" class="btn btn-primary">Save changes</button>  
-            <button class="btn">Cancel</button>  
+            <a class="btn" href="/">Cancel</a>  
           </div>  
         </fieldset>  
-</form>  
-</body>  
+</div>
 </html> 
