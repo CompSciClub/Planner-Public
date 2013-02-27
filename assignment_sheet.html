@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/datepicker.css"/>
+	<script src = "js/expanding.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/schedule.js"></script>
     <script src="js/assignment_sheet.js"></script>
@@ -34,24 +35,24 @@
 			  
         <div class = "accordion-group" id = "accgroup0">
 					<div class = "accordion-heading">
-						<a class = "date span3" id = "day0"></a>
+						<div class = "date span3" id = "day0"></div>
 						<input id = "evname0" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip0"></input>
 					</div> <!-- Someone will have to figure out a way to make them collapse using .focusout, but this works to open the one selected. -->
 					<div id = "descrip0" class = "accordion-body collapse in">
 						<div class = "accordion-inner">
-							<textarea placeholder = "Event Description."></textarea>
+							<textarea id = "desc0" placeholder = "Event Description."></textarea>
 						</div>
 					</div>
 				</div>
 				
         <div class = "accordion-group" id = "accgroup1">
 					<div class = "accordion-heading">
-						<a class = "date span3" id = "day1"></a>
+						<div class = "date span3" id = "day1"></div>
 						<input id = "evname1" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip1"></input>
 					</div> 
 					<div id = "descrip1" class = "accordion-body collapse">
 						<div class = "accordion-inner">
-							<textarea placeholder = "Event Description."></textarea>
+							<textarea id = "desc1"placeholder = "Event Description."></textarea>
 						</div>
 					</div>
 				</div>
@@ -59,12 +60,12 @@
 
         <div class = "accordion-group" id = "accgroup2">
 					<div class = "accordion-heading">
-						<a class = "date span3" id = "day2"></a>
+						<div class = "date span3" id = "day2"></div>
 						<input id = "evname2" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip2"></input>
 					</div> 
 					<div id = "descrip2" class = "accordion-body collapse">
 						<div class = "accordion-inner">
-							<textarea placeholder = "Event Description."></textarea>
+							<textarea id = "desc2" placeholder = "Event Description."></textarea>
 						</div>
 					</div>
 				</div>
@@ -72,12 +73,12 @@
 
         <div class = "accordion-group" id = "accgroup3">
 					<div class = "accordion-heading">
-						<a class = "date span3" id = "day3"></a>
+						<div class = "date span3" id = "day3"></div>
 						<input id = "evname3" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip3"></input>
 					</div> 
 					<div id = "descrip3" class = "accordion-body collapse">
 						<div class = "accordion-inner">
-							<textarea placeholder = "Event Description."></textarea>
+							<textarea id = "desc3" placeholder = "Event Description."></textarea>
 						</div>
 					</div>
 				</div>
@@ -85,12 +86,12 @@
         
         <div class = "accordion-group" id = "accgroup4">
 					<div class = "accordion-heading">
-						<a class = "date span3" id = "day4"></a>
+						<div class = "date span3" id = "day4"></div>
 						<input id = "evname4" type = "text" class = "assignment span9" placeholder = "Event Name." class = "accordion-toggle" data-toggle = "collapse" data-parent = "#accordion1" href = "#descrip4"></input>
 					</div> 
 					<div id = "descrip4" class = "accordion-body collapse">
 						<div class = "accordion-inner">
-							<textarea placeholder = "Event Description."></textarea>
+							<textarea id = "desc4" placeholder = "Event Description."></textarea>
 						</div>
 					</div>
 				</div>
