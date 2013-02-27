@@ -1,12 +1,16 @@
 var current_assignment = 5;//saves how many assignments have been created
 
-var lastDate;
+var startDate, lastDate;
 $(document).ready(function(){
+  startDate = new Date();
   writeDates();
   $(window).scroll(move_options);
   $("#more").click(add_assignment);
   $("#Block").change(writeDates);
-  $("#datepicker").datepicker(); 
+  $("#datepicker").datepicker().on("changeDate", function(ev){
+    startDate = ev.date;
+    writeDates();
+  });
 });
 function move_options(){
   var scrollTop = $(window).scrollTop();
@@ -37,7 +41,7 @@ function add_assignment(){
 
 // writes the dates for the existing date block
 function writeDates(){
-  lastDate = new Date(new Date() - 86400000); // reset lastDate to yesterday (so we can start with today) 
+  lastDate = new Date(startDate.getTime() - 86400000); // reset lastDate to yesterday (so we can start with today) 
 
   var dates = $(".date");
   for (var i = 0; i < dates.length; i++){
