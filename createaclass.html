@@ -1,52 +1,57 @@
 
 <head>   
-<meta charset="utf-8">   
-<title>Create a Class</title>   
-<meta name="description" content="Create a Class">   
-<link href="css/bootstrap.css" rel="stylesheet"> 
-<link href="css/bootstrap-responsive.min.css">
-</head>  
-<body>  
-<div class="pagination-centered">
-<form class="form-horizontal">  
-        <fieldset>  
+   <meta charset="utf-8">   
+   <title>Create a Class</title>   
+   <meta name="description" content="Create a Class">   
+   <link href="css/bootstrap-responsive.min.css">
+   <link href="css/create_a_class.css"rel="stylesheet">
+</head> 
+ <body>  
+  <div class="container">
+    <div class="textpad">
+      <div class="pagination-centered">
+      <form class="form-horizontal">  
           <legend><div class="pagination-centered">Create a Class</div></legend>  
-<form class="form-horizontal">  
-        <fieldset>  
-          <div class="control-group">  
-
-<div class="textpad"><label class="control-label" for="input01">Choose Subject</label>  
- <div class="controls">  
- <input type="text" class="input-large" id="input01"></div>
-              <p class="help-block">
-          <div class="control-group">  
-	</label>
-          </div>  
-          <div class="control-group">  
-            <label class="control-label" for="select01">Select Block</label>  
-            <div class="controls">  
-              <select id="select01">  
+      <form class="form-horizontal">  
+       <div class="textpad"style="padding-right: 150px">
+            <input type="text" style="height:30px">
+             <label class="control-label" for="input01">Choose Subject</label>  
+               <p class="help-block">
+         <div class="control-group"style="padding: 10px">
+           </input>
+	           </label>
+         </div>
+        </div>  
+           <div class="control-group"style="padding-right:150px">  <label class="control-label" for="select01">Select Block</label> 
+            <div class="textpad">  
+              <select id="select01"style="width: 206px">  
                 <option>A</option>  
                 <option>B</option>  
                 <option>C</option>  
                 <option>D</option>  
                 <option>E</option>  
                 <option>F</option>
- 		<option>G</option>
-		<option>H</option>
-		 </select>  
+ 		            <option>G</option>
+	            	<option>H</option>
+		          </select>  
             </div>  
+        </div>  
+          <div class="control-group">
+          </div>
+           <div class="textpad">
+             <label class="control-label" for="textarea">Class Description
+             </label>  
+           </div>
+          <div class="controls"style="padding-right:150px" style="height:25px">  
+             <textarea class="input-xlarge" id="textarea"style="width: 206px" rows="3"></textarea>  
           </div>  
-          <div class="control-group">  
-           <div class="textpad"> <label class="control-label" for="textarea">Class Description</label>   </div>
-         <div class="controls">  
-              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>  
-            </div>  
-          </div>  
-          <div class="form-actions">  
+        <div class="form-actions"style="padding-right:150px">  
             <button type="submit" class="btn btn-primary">Save changes</button>  
             <a class="btn" href="/">Cancel</a>  
-          </div>  
-        </fieldset>  
-</div>
+        </div>        
+      </div>
+    </div>
+   </div>
+  </div>
+  </body>
 </html> 
