@@ -4,54 +4,60 @@
    <title>Create a Class</title>   
    <meta name="description" content="Create a Class">   
    <link href="css/bootstrap-responsive.min.css">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/create_a_class.css"rel="stylesheet">
 </head> 
  <body>  
   <div class="container">
     <div class="textpad">
-      <div class="pagination-centered">
-      <form class="form-horizontal">  
-          <legend><div class="pagination-centered">Create a Class</div></legend>  
-      <form class="form-horizontal">  
-       <div class="textpad"style="padding-right: 150px">
-            <input type="text" style="height:30px">
-             <label class="control-label" for="input01">Choose Subject</label>  
-               <p class="help-block">
-         <div class="control-group"style="padding: 10px">
-           </input>
-	           </label>
-         </div>
-        </div>  
-           <div class="control-group"style="padding-right:150px">  <label class="control-label" for="select01">Select Block</label> 
-            <div class="textpad">  
-              <select id="select01"style="width: 206px">  
-                <option>A</option>  
-                <option>B</option>  
-                <option>C</option>  
-                <option>D</option>  
-                <option>E</option>  
-                <option>F</option>
- 		            <option>G</option>
-	            	<option>H</option>
-		          </select>  
-            </div>  
-        </div>  
-          <div class="control-group">
+     <div class="pagination-centered">
+       <legend><div class="pagination-centered">Create a Class</div></legend>  
+     <form class="form-horizontal">  
+      <div class="textpad"style="padding-right: 175px">
+       <input type="text" style="margin-left:25px" style="height: 30px">
+        <label class="control-label">Choose Subject</label>  
+          <div class="control-group"style="padding: 10px">
+          </label>
+       </input>
           </div>
-           <div class="textpad">
-             <label class="control-label" for="textarea">Class Description
-             </label>  
-           </div>
-          <div class="controls"style="padding-right:150px" style="height:25px">  
-             <textarea class="input-xlarge" id="textarea"style="width: 206px" rows="3"></textarea>  
+       </div>  
+       <div class="pagination-centered padright"style="padding-bottom:40px">
+        <input class="rounded" style="height: 30px">
+        <label class="control-label">Choose Students</label>
+        <p class="help-block"></p>
+        </input>
+       </div>
+         <div class="control-group"style="padding-right:150px"> 
+          <label class="control-label" for="select01">Select Block</label> 
+          <div class="textpad">  
+            <select id="select01"style="width: 206px"class="span3">  
+              <option>A</option>  
+              <option>B</option>  
+              <option>C</option>  
+              <option>D</option>  
+              <option>E</option>  
+              <option>F</option>
+ 	            <option>G</option>
+             <option>H</option>
+	          </select>  
           </div>  
-        <div class="form-actions"style="padding-right:150px">  
-            <button type="submit" class="btn btn-primary">Save changes</button>  
-            <a class="btn" href="/">Cancel</a>  
-        </div>        
-      </div>
+         </div>  
+          <div class="control-group">
+        </div>
+           <div class="textpad">
+            <label class="control-label"for="textarea">Class Description
+            </label>  
+           </div>
+            <div style="padding-bottom:30px"class="padright" class="controls" style="height:25px">  
+              <textarea class="input-xlarge span3"class="padbottom" id="textarea"style="width: 206px" rows="3"></textarea>  
+            </div>  
+              <div class="form-actions"style="padding-right:150px">  
+                                <button type="submit" class="btn btn-primary">Save changes</button>  
+                   <a class="btn" href="/">Cancel</a>  
+               </div>        
+     </div>
     </div>
    </div>
   </div>
-  </body>
+ </body>
 </html> 
